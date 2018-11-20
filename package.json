@@ -1,0 +1,34 @@
+{
+  "name": "nodejsREST_template",
+  "version": "1.0.0",
+  "main": "dir/index",
+  "types": "dir/index",
+  "scripts": {
+    "test": "tsc && NODE_TLS_REJECT_UNAUTHORIZED=0 mocha --exit",
+    "tsc": "tsc",
+    "start": "npm run build:live",
+    "serve": "nodemon --exec ./node_modules/.bin/ts-node -- src/index.ts",
+    "build:live": "tsc && node dist/index.js"
+  },
+  "engines": {
+    "node": "10.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^8.10.38",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.6",
+    "supertest": "^3.3.0",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.9.2",
+    "typescript-eslint-parser": "^6.0.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.4",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.41.2",
+    "sqlite3": "^4.0.4"
+  }
+}

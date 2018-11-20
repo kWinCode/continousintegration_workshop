@@ -1,0 +1,1 @@
+export { UserRestController } from './userRestController';
